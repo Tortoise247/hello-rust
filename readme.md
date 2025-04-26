@@ -15,3 +15,25 @@ source $HOME/.cargo/env
 # RUSTのバージョン確認
 rustc --version
 ```
+
+
+## RUSTのコンパイル
+
+```bash
+# RUSTのコンパイル
+rustc hello.rs
+# RUSTの実行
+./hello
+```
+
+## RUSTのプロジェクト作成
+
+```bash
+# RUSTのプロジェクト作成
+cargo new hello
+cd hello
+# RUSTのビルド
+cargo build
+# RUSTの実行
+cargo run
+```
