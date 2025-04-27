@@ -20,5 +20,13 @@ fn main() {
         )
         .get_matches();
 
-    println!("{:#?}", matches);
+    let text = matches.values_of_lossy("text").unwrap();
+    let omit_newline = matches.is_present("omit_newline");
+
+    let mut ending = "\n";
+    if omit_newline {
+        ending = ""; // 動作しない 
+    }
+    print!("{}{}", text.join(" "), ending); 
+
 }
