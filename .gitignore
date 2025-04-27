@@ -28,3 +28,5 @@
 # Windows
 Thumbs.db
 **/target/
+/echor/err
+/echor/out
